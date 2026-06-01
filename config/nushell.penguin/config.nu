@@ -36,6 +36,7 @@ $env.BAT_THEME         = "Catppuccin Mocha"
 $env.EDITOR            = "hx"
 $env.PLAYDATE_SDK_PATH = "/home/indium114/Documents/PlaydateSDK-3.0.2"
 $env.GOPATH            = "/home/indium114/go"
+$env.GPG_TTY           = (tty)
 
 $env.HOMEBREW_NO_ENV_HINTS = 1
 
