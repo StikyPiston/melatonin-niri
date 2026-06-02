@@ -1,5 +1,5 @@
 add_newline = false
-format = "$directory$git_branch$git_status$nix_shell$character"
+format = "$directory$git_branch$git_status$nix_shell${custom.wares_shell}$character"
 
 [directory]
 style = "bold blue"
@@ -13,3 +13,9 @@ error_symbol = "[<](bold red)"
 [nix_shell]
 format = "[$symbol](bold cyan) "
 symbol = "󱄅"
+
+[custom.wares_shell]
+command = 'echo 󰏖'
+when = '[[ "$WARES_SHELL_ACTIVE" == "true" ]]'
+format = '[$output](blue) '
+shell = ['bash', '--noprofile', '--norc']
