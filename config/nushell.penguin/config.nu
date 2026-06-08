@@ -14,7 +14,6 @@ $env.PATH = ( $env.PATH | prepend "/home/linuxbrew/.linuxbrew/bin" )
 $env.PATH = ( $env.PATH | prepend "/home/indium114/.local/share/bob/nvim-bin" )
 $env.PATH = ( $env.PATH | prepend "/home/indium114/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin" )
 $env.PATH = ( $env.PATH | prepend "/home/indium114/.local/share/bob/nvim-bin" )
-$env.PATH = ( $env.PATH | prepend "/home/indium114/Documents/PlaydateSDK-3.0.2/bin" )
 $env.PATH = ( $env.PATH | prepend "/home/indium114/Applications" )
 $env.PATH = ( $env.PATH | prepend "/home/indium114/.scripts" )
 $env.PATH = ( $env.PATH | prepend "/home/indium114/.cargo/bin" )
@@ -32,11 +31,11 @@ source aliases.nu
 
 $env.config.show_banner = false
 
-$env.BAT_THEME         = "Catppuccin Mocha"
-$env.EDITOR            = "hx"
-$env.PLAYDATE_SDK_PATH = "/home/indium114/Documents/PlaydateSDK-3.0.2"
-$env.GOPATH            = "/home/indium114/go"
-$env.GPG_TTY           = (tty)
+$env.BAT_THEME = "Catppuccin Mocha"
+$env.EDITOR    = "hx"
+$env.GOPATH    = "/home/indium114/go"
+$env.GPG_TTY   = (tty)
+$env.PAGER     = "bat"
 
 $env.HOMEBREW_NO_ENV_HINTS = 1
 
